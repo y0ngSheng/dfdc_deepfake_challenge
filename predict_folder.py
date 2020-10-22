@@ -9,7 +9,7 @@ from kernel_utils import VideoReader, FaceExtractor, confident_strategy, predict
 from training.zoo.classifiers import DeepFakeClassifier
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser("Predict test videos")
+    parser = argparse.ArgumentParser("Predict test videos") //作为标题，跟在usage后面
     arg = parser.add_argument
     arg('--weights-dir', type=str, default="weights", help="path to directory with checkpoints")
     arg('--models', nargs='+', required=True, help="checkpoint files")
